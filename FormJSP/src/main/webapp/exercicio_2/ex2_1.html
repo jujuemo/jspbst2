@@ -1,0 +1,100 @@
+<!DOCTYPE humanas>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulário</title>
+<style>
+	div {
+		display: flex;
+	}
+	
+	label {
+		display: block;
+		margin: 1em;
+	}
+</style>
+</head>
+<body>
+	<form action="ex2_2.jsp">
+		<h1>Dados Pessoais - Formulário</h1>
+		
+		<label for= "nomeID">Nome:
+			<input type="text" id="nomeID" name="nome"> 
+		</label>
+		
+		<label for= "enderecoID">Endereco:
+			<input type="text" id="enderecoID" name="endereco"> 
+		</label>
+		
+		<label for="telefoneID">Telefone:
+			<input type="tel" id="telefoneID" name="telefone">
+		</label>
+			
+		<label for= "idadeID">Idade:
+			<input type="text" id="idadeID" name="idade"> 	
+		</label>
+		
+		<div class="conjunto">
+			<label for="escolaridade">Escolaridade:</label>
+			<select id="escolaridade" name="escolaridade">
+				<option value="ensino fundamental">Ensino Fundamental</option>
+				<option value="ensino medio">Ensino Médio</option>
+				<option value="superior">Superior</option>
+				<option value="pos">Pós-graduação</option>
+			</select>
+		</div><br>
+		
+		Area de conhecimento:
+		<div class="conjunto">
+			<label for="humanas">
+				<input type="radio" id="humanas" name="experiencias" value="humanas">
+				Humanas
+			</label><br>
+				
+			<label for="exatas">
+				<input type="radio" id="exatas" name="experiencias" value="exatas">
+				Exatas
+			</label><br>
+			
+			<label for="artes">
+				<input type="radio" id="artes" name="experiencias" value="artes">
+				Artes
+			</label><br>
+			
+			<label for="saude">
+				<input type="radio" id="saude" name="experiencias" value="saude">
+				Saúde
+			</label>
+		</div><br>
+		
+		Experiencias profissionais:
+		<div class="conjunto">
+			<label for="experiencia1">
+				<input type="checkbox" id="experiencia1" name="experiencia" value="analista"> Analista
+			</label>
+			
+			<label for="experiencia2">
+				<input type="checkbox" id="experiencia2" name="experiencia" value="lider de equipe"> Líder de Equipe
+			</label> 
+			
+			<label for="experiencia3">
+				<input type="checkbox" id="experiencia3" name="experiencia" value="gerente"> Gerente
+			</label>
+			
+			<label for="experiencia4">
+				<input type="checkbox" id="experiencia4" name="experiencia" value="empreendedor"> Empreendedor
+			</label>
+		</div>			
+				
+
+			
+
+				
+			
+			
+			<br> <br> <input type="submit" value=" Enviar">
+	
+	</form>
+		
+</body>
+</html>
